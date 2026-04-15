@@ -44,41 +44,5 @@ variable "association_name_prefix" {
 variable "inbound_rule_name" {
   description = "Inbound access rule name"
   type        = string
-  default     = "inbound"
-}
-
-variable "outbound_rule_name" {
-  description = "Outbound access rule name"
-  type        = string
-  default     = "outbound"
-}
-
-variable "inbound_cidrs" {
-  description = "Inbound allowed CIDR ranges"
-  type        = list(string)
-  default     = []
-}
-
-variable "outbound_cidrs" {
-  description = "Outbound allowed CIDR ranges"
-  type        = list(string)
-  default     = []
-}
-
-variable "enable_databricks_serverless_inbound" {
-  description = "Add AzureDatabricksServerless service tag as inbound rule"
-  type        = bool
-  default     = true
-}
-
-variable "inbound_service_tags" {
-  description = "List of service tags for inbound access rules"
-  type        = list(string)
-  default     = ["AzureDatabricksServerless"]
-}
-
-variable "outbound_service_tags" {
-  description = "List of service tags for outbound access rules"
-  type        = list(string)
-  default     = []
+  default     = "inbound-databricks-serverless"
 }
