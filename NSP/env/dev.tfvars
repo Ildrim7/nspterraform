@@ -1,6 +1,7 @@
 env             = "dev"
 subscription_id = "f9909b4a-a62c-47d4-a0f0-1b5427ca0ea2"
 access_mode     = "Learning"
+#access_mode     = "Enforced"
 
 # AzureDatabricksServerless service tag handles serverless subnet replacement
 inbound_service_tags = ["AzureDatabricksServerless"]
